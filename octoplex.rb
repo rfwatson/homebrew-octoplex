@@ -10,7 +10,7 @@ class Octoplex < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/rfwatson/octoplex/releases/download/v0.0.11/octoplex_Darwin_x86_64.tar.gz"
-      sha256 "5f087c39112b0f82ceadf32187e84c11acc6d320ca99035d0a53f33a1cdef1ad"
+      sha256 "e944510fc0754b6dec03b2586b95a882ae14a71ce6fdeb4bd6740fd12faf15e2"
 
       def install
         bin.install "octoplex"
@@ -18,7 +18,7 @@ class Octoplex < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/rfwatson/octoplex/releases/download/v0.0.11/octoplex_Darwin_arm64.tar.gz"
-      sha256 "ffaa07472a987815daa77154b82ca292a0c7f3266b17cc0a7a1fc3be04ed24f0"
+      sha256 "0eed09e5f3d8da27da419adc25984de1018190f61e685459608cc6b7986e8b1d"
 
       def install
         bin.install "octoplex"
@@ -29,14 +29,14 @@ class Octoplex < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/rfwatson/octoplex/releases/download/v0.0.11/octoplex_Linux_x86_64.tar.gz"
-      sha256 "22811655067a5cc866dad2b40eca23dcdfe8157a48eddf021157a0cd78490393"
+      sha256 "47ac2886ed57bd6130ee48b52b3153a249c8f4dd59211c8795e11bb8eb4579e8"
       def install
         bin.install "octoplex"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/rfwatson/octoplex/releases/download/v0.0.11/octoplex_Linux_arm64.tar.gz"
-      sha256 "ff363c2c78696fa7df90170f568b0805d8efd340785c47402c44d5a1dde880aa"
+      sha256 "2601ee37db99ab85c81f3422bbbdfaf17bd969a9bb97c7d989fa2aaf0f3d56ad"
       def install
         bin.install "octoplex"
       end
