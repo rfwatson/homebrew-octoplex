@@ -5,20 +5,20 @@
 class Octoplex < Formula
   desc "Octoplex is a live video restreamer for the terminal."
   homepage "https://github.com/rfwatson/octoplex"
-  version "0.0.15-rc.1"
+  version "0.0.15"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rfwatson/octoplex/releases/download/v0.0.15-rc.1/octoplex_Darwin_x86_64.tar.gz"
-      sha256 "ed917326457da8aa884869e1659ad64d61ea9e326f295dd8bb67b5c293f5b2d8"
+      url "https://github.com/rfwatson/octoplex/releases/download/v0.0.15/octoplex_Darwin_x86_64.tar.gz"
+      sha256 "5ea2da8bd3521c2bbba3a1532b729c8c39e3064facb5a1d71f1215b168eb2786"
 
       def install
         bin.install "octoplex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rfwatson/octoplex/releases/download/v0.0.15-rc.1/octoplex_Darwin_arm64.tar.gz"
-      sha256 "34104c0f20c2b97fcaacc9d549c98195bc1f5bf67d038de00f4740b639b2f932"
+      url "https://github.com/rfwatson/octoplex/releases/download/v0.0.15/octoplex_Darwin_arm64.tar.gz"
+      sha256 "ce9950ab93ea547040edd7a983ef9dd5c182ce531a8de008aec7d540dfe9a03e"
 
       def install
         bin.install "octoplex"
@@ -28,15 +28,15 @@ class Octoplex < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/rfwatson/octoplex/releases/download/v0.0.15-rc.1/octoplex_Linux_x86_64.tar.gz"
-      sha256 "4ed682ab5c9bdea97b0d27e47783540991e1cb5dab94d12a626ac2352d94904c"
+      url "https://github.com/rfwatson/octoplex/releases/download/v0.0.15/octoplex_Linux_x86_64.tar.gz"
+      sha256 "439897ef5e37835848620b5aff64719400792bb210dfe3f09bce078db485720f"
       def install
         bin.install "octoplex"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/rfwatson/octoplex/releases/download/v0.0.15-rc.1/octoplex_Linux_arm64.tar.gz"
-      sha256 "d63fb8371d5d6529e4e1caf2488687b84cac79835ae7660d960ecaf7c00c641f"
+      url "https://github.com/rfwatson/octoplex/releases/download/v0.0.15/octoplex_Linux_arm64.tar.gz"
+      sha256 "08bce4bfe306f73ed48c544f7b46a5b99f1e0fd4f2909eb1107c71620752d6be"
       def install
         bin.install "octoplex"
       end
